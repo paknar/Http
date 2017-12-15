@@ -1,0 +1,17 @@
+import socket
+import os
+
+class Respon :
+    
+        
+    def direktori (self, url) :
+        try:
+			dir = os.listdir(path)
+		except FileNotFoundError:
+			hasil = "HTTP/1.1 404 Not Found\r\n" \
+					"Content-Type: text/plain\r\n" \
+					"Content-Length: 16\r\n" \
+					"\r\n" \
+					"Tidak ada folder"
+			hasil = hasil.encode()
+			return hasil
