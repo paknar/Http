@@ -24,8 +24,8 @@ class Respon () :
 					"404 Not Found"
 			hasil = hasil.encode()
 			return hasil
-		isi=os.listdir()
-		for x in isi :
+		
+		for x in dir :
 			msg+=str(x+'</br>')
 		hasil = "HTTP/1.1 200 OK\r\n" \
 				"Content-Type: text/html\r\n" \
