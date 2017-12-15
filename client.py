@@ -21,6 +21,8 @@ class Handler(threading.Thread) :
             return self.Respon.command(url)
         elif '.' in url :
             return self.Respon.files(url)
+        else :
+            return self.Respon.direktori(url)
         
                     
     
